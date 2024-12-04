@@ -6,20 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <button>click here</button>
+    <button class="open">open</button>
     <div id="boite" style="width:25%px; height: 100%; border: 1px solid black; display: none;">
+        <button class="close">close</button>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, incidunt!
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, ducimus id error totam, autem, incidunt minima ea natus accusamus cupiditate ratione beatae adipisci aut! Ipsam fuga dicta id numquam veritatis repudiandae exercitationem ea, expedita eius dolore eaque ratione explicabo corporis voluptas odit culpa cum. Aliquam nesciunt expedita non id, voluptates aliquid totam? Minima, quis sapiente aperiam ad, architecto itaque dolores molestiae, unde consectetur ipsum voluptatum aliquam veritatis quae alias similique odio minus iure ratione pariatur illo maxime eaque quod veniam.
     </div>
     <script>
-        const button=document.querySelector("button")
+        const open=document.querySelector(".open")
         const boite=document.getElementById("boite")
-        button.addEventListener('click',()=>{
-            if(boite.style.display==="none"){
+        open.addEventListener('click',()=>{
                 boite.style.display="block"
-            }else{
-                boite.style.display="none"
-            }
+        })
+
+        const close=document.querySelector(".close")
+        close.addEventListener('click',()=>{
+            boite.style.display="none"
         })
     </script>
 </body>
