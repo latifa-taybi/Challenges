@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,24 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    body {
-        background-color: aqua;
-    }
-</style>
 <body>
-    <button style="background-color: beige; width:150px; height: 50px;">Changer la couleur de la page</button>
+    <button style="background-color: beige; width:150px; height: 50px;">click here</button>
 </body>
 <script>
     const button = document.querySelector("button");
-    const body = document.querySelector("body");
     button.addEventListener('click', (event) => {
         event.preventDefault();
-        if(body.style.backgroundColor ==="aqua"){
-            body.style.backgroundColor = "blue"; 
-        }else{
-            body.style.backgroundColor = "aqua"
-        }
+        alert('tres bien')
         
     });
 </script>
