@@ -7,15 +7,20 @@
 </head>
 <body>
     <button>click here</button>
-    <p></p>
+    <div id="boite" style="width:25%px; height: 100%; border: 1px solid black; display: none;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, incidunt!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, ducimus id error totam, autem, incidunt minima ea natus accusamus cupiditate ratione beatae adipisci aut! Ipsam fuga dicta id numquam veritatis repudiandae exercitationem ea, expedita eius dolore eaque ratione explicabo corporis voluptas odit culpa cum. Aliquam nesciunt expedita non id, voluptates aliquid totam? Minima, quis sapiente aperiam ad, architecto itaque dolores molestiae, unde consectetur ipsum voluptatum aliquam veritatis quae alias similique odio minus iure ratione pariatur illo maxime eaque quod veniam.
+    </div>
+    <script>
+        const button=document.querySelector("button")
+        const boite=document.getElementById("boite")
+        button.addEventListener('click',()=>{
+            if(boite.style.display==="none"){
+                boite.style.display="block"
+            }else{
+                boite.style.display="none"
+            }
+        })
+    </script>
 </body>
-<script>
-    const button=document.querySelector("button")
-    const count=document.querySelector("p")
-    counter=0
-    button.addEventListener('click',()=>{
-        counter++;
-        count.textContent=counter
-    })
-</script>
 </html>
