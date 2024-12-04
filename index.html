@@ -6,20 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-<input type="text">
-<button>submit</button>
+    <div id="texte" style="border: 1px solid black; width:50%; height: 50px;">ajouter une classe css</div>
+    <button class="background">background-color:blue</button>
+    <button class="padding">padding:50px</button>
+    <button class="color">color:white</button>
 
 <script>
-    const input=document.querySelector("input")
-    const button=document.querySelector("button")
-    button.addEventListener('click',()=>{
-        if(input.value.length<5){
-        alert('le champ doit contenir au moins 5 caracteres')
-        }else{
-            alert('tres bien')
-        }
+    const texte=document.getElementById("texte")
+    const background=document.querySelector(".background") 
+    const padding=document.querySelector(".padding") 
+    const color=document.querySelector(".color")    
+
+    background.addEventListener('click',()=>{
+        texte.style.backgroundColor="blue"
     })
-    
+    padding.addEventListener('click',()=>{
+        texte.style.padding="50px"
+    })
+    color.addEventListener('click',()=>{
+        texte.style.color="white"
+    })
 </script>
 
 </body>
