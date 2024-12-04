@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <button style="background-color: beige; width:150px; height: 50px;">click here</button>
+    <button>click here</button>
+    <p></p>
 </body>
 <script>
-    const button = document.querySelector("button");
-    button.addEventListener('click', (event) => {
-        event.preventDefault();
-        alert('tres bien')
-        
-    });
+    const button=document.querySelector("button")
+    const count=document.querySelector("p")
+    counter=0
+    button.addEventListener('click',()=>{
+        counter++;
+        count.textContent=counter
+    })
 </script>
 </html>
